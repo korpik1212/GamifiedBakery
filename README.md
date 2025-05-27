@@ -18,3 +18,6 @@ This project uses a scale as a custom controller in order to gamify baking
 ![hardwareprogramming schematic](https://github.com/user-attachments/assets/ef2c2348-2d13-4ad8-80fe-ecc5675b68e0)
 
 
+#Gameplay video
+
+https://drive.google.com/drive/folders/1kwqqvfabQNppM70Z-7sJd8cREeosElkA?usp=sharing
