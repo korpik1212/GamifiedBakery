@@ -5,16 +5,27 @@ using UnityEngine.Events;
 
 public class SequenceLoader : MonoBehaviour
 {
-
+    public static SequenceLoader instance;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI extraInfoText;
 
     public RewardSequence rewardSequence;
-    public RecipeSO debugSO;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
-        LoadRecipe(debugSO);
+        //LoadRecipe(debugSO);
     }
     public void LoadRecipe(RecipeSO recipe)
     {
